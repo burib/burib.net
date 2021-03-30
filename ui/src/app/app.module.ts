@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -20,6 +22,7 @@ registerLocaleData(en);
   ],
   imports: [
     BrowserModule,
+    NzLayoutModule,
     AppRoutingModule,
     ScullyLibModule,
     FormsModule,

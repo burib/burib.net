@@ -1,1 +1,80 @@
-<p>cv works!</p>
+<div class="bio" *ngIf=data>
+    <img src="/assets/profile_pic.png" alt="{{data.name }}" width="100"/>
+    <div>
+        <h2 class="name">{{ data.name }}</h2>
+        <p>{{ data.short_bio }}</p>
+        <ul class="social_portals">
+            <li *ngFor="let social of data.social_portals">
+                <img src="{{ social.logo }}" width="14" alt="{{ social.title }}" />
+                <a href="{{ social.url }}" target="_blank">{{ social.title }}</a>
+            </li>
+        </ul>
+        <ul class="contacts">
+            <li *ngFor="let meta of data.properties | keyvalue">
+                <strong class="key">{{ meta.key }}:</strong><br/> {{ meta.value }}
+            </li>
+        </ul>
+    </div>
+    <div class="info-blocks">
+        <ul class="spoken_languages">
+            <li *ngFor="let language of data.spoken_languages">
+                <strong>{{ language.language }}:</strong> {{ language.level }}
+            </li>
+        </ul>
+        <ul class="certificates">
+            <li *ngFor="let certificate of data.certificates">
+                <a *ngIf="certificate.url" href="{{ certificate.url }}"><strong>{{ certificate.title }}</strong></a>
+                <span *ngIf="!certificate.url">{{ certificate.title }}</span>
+                <br/>{{ certificate.date }}
+            </li>
+        </ul>
+    </div>
+</div>
+
+<h3 class="work-experience">Work Experience</h3>
+<nz-timeline *ngIf="data" class="job_history">
+    <nz-timeline-item *ngFor="let job of data.job_history">
+        <img src="{{ job.logo }}" height="40" class="employer-logo" />
+        <div class="details">
+            <span class="position job">{{ job.position }}</span>
+            <span class="employer job"><a href="{{ job.website }}" target="_blank">{{ job.employer }}</a></span>
+            <span class="date job">{{ job.date }}</span>
+            <span class="location job">{{ job.location }}</span>
+            <span class="description job" [innerHtml]="job.description"></span>
+            <span class="technologies job">{{ job.technologies }}</span>
+        </div>
+    </nz-timeline-item>
+</nz-timeline>
+
+<div class="info-blocks hobbies-and-education" *ngIf="data">
+    <div>
+        <h3>Education</h3>
+        <ul class="education">
+            <li *ngFor="let education of data.education">
+                <strong>{{ education.date }}</strong>
+                <br/>{{ education.description }}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Side Projects</h3>
+        <ul class="project">
+            <li *ngFor="let project of data.projects">
+                <strong [innerHtml]="project.title"></strong><br/>
+                <span [innerHtml]="project.description"></span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Hobbies</h3>
+        <ul class="hobbies">
+            <li *ngFor="let hobby of data.hobbies">
+                {{ hobby.description }}
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- <pre>
+    {{ data | json}}
+</pre> -->

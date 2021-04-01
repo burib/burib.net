@@ -1,0 +1,142 @@
+{
+  "name": "Tom Jerry",
+  "title": "Senior Developer",
+  "properties": {
+    "born": 1928,
+    "email": "tomjerry@gmail.com",
+    "phone": "+1 555 1234 3456",
+    "residence": "Town, Country. ( X permit, valid until Aug 2300 )"
+  },
+  "nationality": "Developian",
+  "short_bio": "Senior Software Engineer with 100+ years experience.",
+  "technologies": {
+    "frontend": "JavaScript, HTML5, css3, Angular, TypeScript, SASS, LESS.",
+    "backend": "AWS lambda, API Gateway, S3, CloudFront, CloudFormation, Node.js",
+    "tooling": "Git, GitHub, Grunt, Webpack, NPM, Bower, CircleCi, github actions, serverless framework."
+  },
+  "social_portals": [
+    {
+      "title": "Github",
+      "url": "https://github.com/github",
+      "logo": "/assets/logos/github.png"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/github/",
+      "logo": "/assets/logos/linkedin.png"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/github",
+      "logo": "/assets/logos/twitter.png"
+    },
+    {
+      "title": "Stackoverflow",
+      "url": "https://stackoverflow.com/users/123456/github",
+      "logo": "/assets/logos/stackoverflow.png"
+    }
+  ],
+  "hobbies": [
+    {
+      "description": "lorem"
+    },
+    {
+      "description": "ipsum"
+    },
+    {
+      "description": "dolor"
+    },
+    {
+      "description": "sit"
+    },
+    {
+      "description": "umet"
+    }
+  ],
+  "projects": [
+    {
+      "title": "<a href='https://google.com/' target='_blank'>google.com</a>",
+      "description": "As a hobby I've developed google.com over the weekend from a garage of course."
+    }
+  ],
+  "education": [
+    {
+      "date": "1938 - 2020",
+      "description": "MIT"
+    }
+  ],
+  "job_history": [
+    {
+      "employer": "Rackspace Technology",
+      "website": "https://www.rackspace.com/",
+      "logo": "/assets/logos/rackspace.png",
+      "date": "August 1980 - Present",
+      "location": "San Antonio, Texas",
+      "description": "Baked cookies, brew coffee.",
+      "position": "Senior Octopus.",
+      "technologies": [
+        "tech 1",
+        "tech 2",
+        "tech 3",
+        "tech 4",
+        "tech 5",
+        "tech 6",
+        "tech 7",
+        "tech 8"
+      ]
+    },
+    {
+      "employer": "EPAM System",
+      "website": "https://www.epam.com/",
+      "logo": "/assets/logos/epam.png",
+      "date": "Jan, 1966 - August, 1980",
+      "location": "Zurich, Switzerland",
+      "position": "Senior Jamakazi",
+      "description": "Coding and stuff.",
+      "technologies": [
+        "tech 1",
+        "tech 2",
+        "tech 3",
+        "tech 4",
+        "tech 5",
+        "tech 6",
+        "tech 7",
+        "tech 8"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "AWS Certified Solutions Architect - Associate",
+      "url": "https://www.youracclaim.com/badges/HASH_HASH_HASH",
+      "date": "Jan 01, 2020 - Jan 01, 2023"
+    },
+    {
+      "title": "AWS Certified Developer - Associate",
+      "url": "https://www.youracclaim.com/badges/HASH_HASH_HASH",
+      "date": "Jan 01, 2020 - Jan 01, 2023"
+    },
+    {
+      "title": "AWS SysOps - Associate",
+      "date": "In Progress, Planned for 2021"
+    },
+    {
+      "title": "AWS Certified Solutions Architect - Professional",
+      "date": "In Progress, Planned for 2021"
+    }
+  ],
+  "spoken_languages": [
+    {
+      "language": "Gibberish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "C2 Proficient"
+    },
+    {
+      "language": "German",
+      "level": "B2 Confident"
+    }
+  ]
+}

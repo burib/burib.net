@@ -1,3 +1,8 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
 :host {
     font-size: 13px;
 
@@ -77,14 +82,33 @@
         border-bottom: 2px solid #f0f0f0;
 
         ::ng-deep {
+            .ant-timeline-item {
+                padding-bottom: 10px;
+                break-inside: avoid;
+
+                .employer-logo {
+                    display: block;
+                }
+            }
+            
             .ant-timeline-item:last-child {
                 padding-bottom: 0;
             }
 
             .ant-timeline-item-content {
                 display: grid;
+                top: 0;
                 grid-template-columns: 55px 1fr;
             }
+
+            .ant-tag {
+                margin-bottom: 5px;
+            }
+
+            // .ant-timeline-item-head-blue {
+            //     background-color: #1890ff;
+            // }
+
         }
 
         .job {
@@ -98,6 +122,11 @@
         .description {
             padding: 10px 0;
         }
+
+        .technologies {
+            
+        }
+        
     }
 
     .hobbies-and-education {

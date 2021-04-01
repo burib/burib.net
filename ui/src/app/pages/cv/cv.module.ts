@@ -5,13 +5,15 @@ import { CvRoutingModule } from './cv-routing.module';
 import { CvComponent } from './cv.component';
 
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 
 @NgModule({
   declarations: [CvComponent],
   imports: [
     CommonModule,
     CvRoutingModule,
-    NzTimelineModule
+    NzTimelineModule,
+    NzTagModule,
   ]
 })
 export class CvModule { }

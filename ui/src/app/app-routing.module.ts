@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/cv'
+  },
+  {
     path: 'cv',
     loadChildren: () => import('./pages/cv/cv.module').then(m => m.CvModule)
   }

@@ -13,7 +13,7 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   getCv(): Promise<CvModel> {
-    return this.httpClient.get<CvModel>('assets/cv.json')
+    return this.httpClient.get<CvModel>('assets/cv-sample.json')
     .toPromise();
   }
 }

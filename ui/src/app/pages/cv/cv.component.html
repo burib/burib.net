@@ -1,5 +1,5 @@
 <div class="bio" *ngIf=data>
-    <img src="/assets/profile_pic.png" alt="{{data.name }}" width="100"/>
+    <img src="https://via.placeholder.com/100x133?text={{ data.name }}" alt="{{data.name }}" width="100"/>
     <div>
         <h2 class="name">{{ data.name }}</h2>
         <p>{{ data.short_bio }}</p>
@@ -41,7 +41,10 @@
             <span class="date job">{{ job.date }}</span>
             <span class="location job">{{ job.location }}</span>
             <span class="description job" [innerHtml]="job.description"></span>
-            <span class="technologies job">{{ job.technologies }}</span>
+            <span class="technologies job">
+                <!-- <nz-tag [nzColor]="'#84c3ff'" *ngFor="let technology of job.technologies">{{ technology }}</nz-tag> -->
+                <nz-tag [nzColor]="'#5cbde8'" *ngFor="let technology of job.technologies">{{ technology }}</nz-tag>
+            </span>
         </div>
     </nz-timeline-item>
 </nz-timeline>
